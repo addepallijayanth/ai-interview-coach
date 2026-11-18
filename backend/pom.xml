@@ -27,7 +27,7 @@
         <springdoc.version>2.8.17</springdoc.version>
         <wiremock.version>3.13.2</wiremock.version>
         <embedded-postgres.version>2.2.2</embedded-postgres.version>
-        <embedded-postgres-binaries.version>17.12.0</embedded-postgres-binaries.version>
+        <embedded-postgres-binaries.version>18.6.0</embedded-postgres-binaries.version>
 
         <!-- The AI eval suite calls the real Claude API, so it is excluded from normal builds.
              Run it with: ./mvnw test -Peval   (needs ANTHROPIC_API_KEY) -->
