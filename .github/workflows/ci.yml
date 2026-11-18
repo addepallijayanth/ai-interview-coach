@@ -31,7 +31,7 @@ jobs:
       - run: chmod +x mvnw && ./mvnw -B verify
       - name: Upload test reports
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: backend-test-reports
           path: backend/target/surefire-reports
