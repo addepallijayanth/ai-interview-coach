@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "matchScore": { "type": "integer", "description": "0-100, computed with the rubric" },
+    "matchedSkills": { "type": "array", "items": { "type": "string" } },
+    "missingSkills": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Most important first"
+    },
+    "strengths": { "type": "array", "items": { "type": "string" } },
+    "suggestions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "original": { "type": "string", "description": "Copied exactly from the resume" },
+          "improved": { "type": "string" },
+          "reason": { "type": "string" }
+        },
+        "required": ["original", "improved", "reason"],
+        "additionalProperties": false
+      }
+    },
+    "summary": { "type": "string" }
+  },
+  "required": ["matchScore", "matchedSkills", "missingSkills", "strengths", "suggestions", "summary"],
+  "additionalProperties": false
+}

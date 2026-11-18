@@ -1,0 +1,162 @@
+[
+  {
+    "id": "java-backend-strong",
+    "description": "Senior Java backend engineer applying for a senior Java backend role",
+    "expectedScore": { "min": 80, "max": 100 },
+    "mustDetectGaps": [],
+    "resume": "Senior Software Engineer, FinStack (2019 - present)\n- Designed Spring Boot microservices for card payments handling 3,000 requests per second\n- Introduced Kafka-based event sourcing for ledger updates\n- Ran services on Kubernetes (EKS) with Helm and ArgoCD\n- Led migration from Oracle to PostgreSQL with zero downtime\nSoftware Engineer, Retailio (2016 - 2019)\n- Built REST APIs in Java 11 and Spring for inventory management\n- Wrote integration tests with JUnit 5 and Testcontainers\nSkills: Java 21, Spring Boot, Kafka, PostgreSQL, Redis, Kubernetes, AWS, Docker, CI/CD\nEducation: B.E. Computer Engineering",
+    "jobDescription": "Senior Backend Engineer (Java)\nWe build payment infrastructure for online merchants.\nRequirements: 6+ years of backend development; Java and Spring Boot; event-driven systems with Kafka; PostgreSQL; Kubernetes; strong testing practices.\nNice to have: AWS, Redis, experience in fintech.\nYou will own critical payment services end to end and mentor other engineers."
+  },
+  {
+    "id": "react-frontend-strong",
+    "description": "React developer applying for a React frontend role",
+    "expectedScore": { "min": 78, "max": 100 },
+    "mustDetectGaps": [],
+    "resume": "Frontend Engineer, Shoply (2020 - present)\n- Rebuilt the checkout in React 18 and TypeScript, raising conversion by 9%\n- Created a shared component library with Storybook and design tokens\n- Improved Core Web Vitals: LCP from 4.1s to 1.8s with code splitting and image optimisation\n- Wrote unit tests with Jest and React Testing Library and E2E tests with Playwright\nJunior Web Developer, Pixel Agency (2018 - 2020)\n- Built responsive marketing sites with HTML, CSS and JavaScript\nSkills: React, TypeScript, JavaScript, Redux Toolkit, Next.js, CSS, Jest, Playwright, accessibility (WCAG)",
+    "jobDescription": "Frontend Engineer (React)\nRequirements: 4+ years building web applications; React and TypeScript; state management; automated testing; performance optimisation; accessibility.\nNice to have: Next.js, design systems, GraphQL.\nYou will build customer-facing features with designers and backend engineers."
+  },
+  {
+    "id": "java-to-go",
+    "description": "Java backend engineer applying for a Go backend role",
+    "expectedScore": { "min": 45, "max": 72 },
+    "mustDetectGaps": ["Go|Golang", "gRPC"],
+    "resume": "Backend Engineer, Logistix (2018 - present)\n- Built Spring Boot services for shipment tracking used by 200 warehouses\n- Designed REST APIs and documented them with OpenAPI\n- Tuned PostgreSQL queries, cutting p95 latency by 45%\n- Deployed services with Docker and Jenkins pipelines\nSkills: Java, Spring Boot, REST, PostgreSQL, Docker, Jenkins, Linux",
+    "jobDescription": "Backend Engineer (Go)\nRequirements: 4+ years of backend development; production experience with Go; gRPC and Protocol Buffers; PostgreSQL; Docker and Kubernetes.\nNice to have: Prometheus, distributed tracing.\nYou will build high-throughput internal platform services."
+  },
+  {
+    "id": "analyst-to-data-scientist",
+    "description": "Data analyst applying for a machine learning data scientist role",
+    "expectedScore": { "min": 30, "max": 60 },
+    "mustDetectGaps": ["Machine Learning|ML", "Python"],
+    "resume": "Data Analyst, Brightmart (2019 - present)\n- Built weekly sales dashboards in Tableau used by 40 store managers\n- Wrote SQL queries to analyse customer cohorts and churn\n- Automated reporting in Excel with Power Query, saving 6 hours a week\n- Presented insights on pricing experiments to the leadership team\nSkills: SQL, Excel, Tableau, Power BI, A/B test analysis, stakeholder communication\nEducation: B.Com",
+    "jobDescription": "Data Scientist\nRequirements: Python (pandas, scikit-learn); machine learning model development and evaluation; statistics and experiment design; SQL.\nNice to have: deep learning, MLOps, cloud platforms.\nYou will build predictive models for demand forecasting and personalisation."
+  },
+  {
+    "id": "nurse-to-software",
+    "description": "Registered nurse with no programming experience applying for a software engineer role",
+    "expectedScore": { "min": 0, "max": 20 },
+    "mustDetectGaps": ["Java|Python|programming|software"],
+    "resume": "Registered Nurse, City General Hospital (2015 - present)\n- Care for up to 8 patients per shift in a busy medical ward\n- Train new nurses on electronic health record documentation\n- Led a quality-improvement project that reduced patient falls by 30%\nSkills: patient care, medication administration, EHR systems, triage, team leadership\nEducation: B.Sc Nursing",
+    "jobDescription": "Software Engineer\nRequirements: 3+ years of professional software development; proficiency in Java or Python; REST APIs; SQL databases; Git; automated testing.\nNice to have: cloud platforms, microservices.\nYou will design and build backend services."
+  },
+  {
+    "id": "designer-to-devops",
+    "description": "Graphic designer applying for a DevOps engineer role",
+    "expectedScore": { "min": 0, "max": 20 },
+    "mustDetectGaps": ["Kubernetes", "AWS|cloud", "Terraform"],
+    "resume": "Senior Graphic Designer, Bold Studio (2016 - present)\n- Created brand identities for 30+ clients\n- Produced print and social media campaigns in Adobe Creative Suite\n- Managed a team of 3 junior designers\nSkills: Adobe Photoshop, Illustrator, InDesign, Figma, typography, branding",
+    "jobDescription": "DevOps Engineer\nRequirements: AWS; Terraform; Kubernetes; CI/CD pipelines (GitHub Actions or GitLab CI); Linux administration; scripting in Bash or Python.\nNice to have: observability tooling, security hardening.\nYou will run and automate our cloud infrastructure."
+  },
+  {
+    "id": "new-grad-to-staff",
+    "description": "New graduate with internships applying for a staff engineer role needing 10+ years",
+    "expectedScore": { "min": 15, "max": 45 },
+    "mustDetectGaps": ["system design|architecture|distributed systems|leadership"],
+    "resume": "Software Engineering Intern, CloudNine (Summer 2024)\n- Added pagination to an internal admin API in Java and Spring Boot\n- Wrote unit tests that raised coverage of the module from 52% to 78%\nTeaching Assistant, Data Structures course (2023 - 2024)\nProjects: chat app with React and Firebase; ray tracer in C++\nSkills: Java, Python, C++, Spring Boot, React, Git\nEducation: B.Tech Computer Science (2025)",
+    "jobDescription": "Staff Software Engineer\nRequirements: 10+ years of software engineering experience; leading the architecture of large distributed systems; Java; technical leadership across multiple teams; mentoring senior engineers.\nNice to have: experience at scale (millions of users).\nYou will set technical direction for the platform organisation."
+  },
+  {
+    "id": "devops-strong",
+    "description": "DevOps engineer applying for a matching DevOps role",
+    "expectedScore": { "min": 80, "max": 100 },
+    "mustDetectGaps": [],
+    "resume": "DevOps Engineer, StreamCo (2018 - present)\n- Managed 40 AWS accounts with Terraform and Terragrunt\n- Operated EKS clusters running 300 services; introduced Karpenter, saving 28% on compute\n- Built GitHub Actions pipelines with automated canary releases\n- Set up Prometheus, Grafana and PagerDuty alerting\n- Wrote automation in Python and Bash\nSkills: AWS, Terraform, Kubernetes, Helm, GitHub Actions, Docker, Linux, Python, Bash, Prometheus",
+    "jobDescription": "DevOps Engineer\nRequirements: AWS; Terraform; Kubernetes; CI/CD pipelines (GitHub Actions or GitLab CI); Linux administration; scripting in Bash or Python.\nNice to have: observability tooling, cost optimisation.\nYou will run and automate our cloud infrastructure."
+  },
+  {
+    "id": "django-to-spring",
+    "description": "Python Django developer applying for a Java Spring Boot role",
+    "expectedScore": { "min": 40, "max": 65 },
+    "mustDetectGaps": ["Java", "Spring Boot|Spring"],
+    "resume": "Backend Developer, Edulearn (2019 - present)\n- Built Django REST Framework APIs serving 1 million students\n- Designed PostgreSQL schemas and Celery background jobs\n- Containerised services with Docker and deployed to AWS ECS\n- Introduced pytest-based test suites with 85% coverage\nSkills: Python, Django, PostgreSQL, Redis, Celery, Docker, AWS, REST",
+    "jobDescription": "Backend Engineer\nRequirements: 3+ years of backend development; Java and Spring Boot; PostgreSQL; REST API design; Docker.\nNice to have: AWS, messaging systems.\nYou will build APIs for our learning platform."
+  },
+  {
+    "id": "android-missing-compose",
+    "description": "Android Kotlin developer without Jetpack Compose applying for a Compose-heavy role",
+    "expectedScore": { "min": 58, "max": 84 },
+    "mustDetectGaps": ["Jetpack Compose|Compose"],
+    "resume": "Android Developer, RideNow (2019 - present)\n- Built the driver app in Kotlin with MVVM, Coroutines and Room\n- Reduced crash rate from 2.1% to 0.4% using Crashlytics insights\n- Integrated Google Maps SDK and real-time location updates\n- Published releases through Google Play with staged rollouts\nSkills: Kotlin, Java, Android SDK, XML layouts, MVVM, Coroutines, Room, Retrofit, Dagger Hilt",
+    "jobDescription": "Android Engineer\nRequirements: 3+ years of Android development; Kotlin; Jetpack Compose; Coroutines and Flow; modern architecture (MVVM/MVI); automated UI testing.\nNice to have: Kotlin Multiplatform.\nYou will build our next-generation app UI with Compose."
+  },
+  {
+    "id": "data-engineer-strong",
+    "description": "Data engineer applying for a data engineering role",
+    "expectedScore": { "min": 78, "max": 100 },
+    "mustDetectGaps": [],
+    "resume": "Data Engineer, AdTrack (2019 - present)\n- Built Spark batch pipelines processing 5 TB of events per day\n- Orchestrated 120 workflows in Apache Airflow\n- Modelled warehouse tables in Snowflake with dbt\n- Streamed clickstream data with Kafka into the lakehouse\nSkills: Python, SQL, Apache Spark, Airflow, Kafka, dbt, Snowflake, AWS (S3, EMR, Glue)",
+    "jobDescription": "Data Engineer\nRequirements: Python and SQL; Apache Spark; workflow orchestration (Airflow); data modelling; cloud data platforms.\nNice to have: Kafka, dbt.\nYou will build reliable batch and streaming data pipelines."
+  },
+  {
+    "id": "manual-qa-to-sdet",
+    "description": "Manual QA tester applying for an automation (SDET) role",
+    "expectedScore": { "min": 28, "max": 55 },
+    "mustDetectGaps": ["Selenium|test automation|automation", "Java"],
+    "resume": "QA Analyst, InsureNet (2018 - present)\n- Wrote and executed 600+ manual test cases for policy management software\n- Logged and triaged defects in Jira with clear reproduction steps\n- Performed regression and user acceptance testing for monthly releases\n- Tested REST APIs manually using Postman\nSkills: manual testing, test case design, Jira, Postman, SQL, Agile",
+    "jobDescription": "SDET (Software Development Engineer in Test)\nRequirements: test automation with Selenium or Playwright; programming in Java; API test automation; CI integration (Jenkins or GitHub Actions); test strategy.\nNice to have: performance testing.\nYou will build our automated test framework."
+  },
+  {
+    "id": "fullstack-missing-postgres",
+    "description": "MERN full-stack developer applying for a TypeScript/PostgreSQL full-stack role",
+    "expectedScore": { "min": 58, "max": 82 },
+    "mustDetectGaps": ["PostgreSQL|SQL"],
+    "resume": "Full-Stack Developer, EventHub (2020 - present)\n- Built ticketing features in React and Node.js (Express) used by 500 venues\n- Designed MongoDB collections and aggregation pipelines\n- Migrated the frontend from JavaScript to TypeScript\n- Deployed on AWS with Docker and GitHub Actions\nSkills: JavaScript, TypeScript, React, Node.js, Express, MongoDB, Docker, AWS",
+    "jobDescription": "Full-Stack Engineer\nRequirements: TypeScript; React; Node.js; PostgreSQL and relational data modelling; REST API design; automated testing.\nNice to have: GraphQL, AWS.\nYou will ship features across the stack for our booking platform."
+  },
+  {
+    "id": "accountant-to-data-engineer",
+    "description": "Accountant applying for a data engineer role",
+    "expectedScore": { "min": 0, "max": 25 },
+    "mustDetectGaps": ["Python", "Spark"],
+    "resume": "Senior Accountant, Morgan & Co (2014 - present)\n- Prepared monthly financial statements and reconciliations\n- Built Excel models for budgeting and variance analysis\n- Coordinated year-end audits with external auditors\nSkills: financial reporting, IFRS, Excel, SAP, budgeting, auditing\nEducation: Chartered Accountant",
+    "jobDescription": "Data Engineer\nRequirements: Python and SQL; Apache Spark; workflow orchestration (Airflow); data modelling; cloud data platforms.\nNice to have: Kafka, dbt.\nYou will build reliable batch and streaming data pipelines."
+  },
+  {
+    "id": "pm-to-engineer",
+    "description": "Product manager applying for a backend software engineer role",
+    "expectedScore": { "min": 10, "max": 40 },
+    "mustDetectGaps": ["Java|Python|programming"],
+    "resume": "Product Manager, TaskFlow (2018 - present)\n- Owned the roadmap for a project-management SaaS with 50,000 users\n- Ran discovery interviews and prioritised features with RICE scoring\n- Wrote PRDs and user stories with engineering teams\n- Used SQL and Amplitude to analyse feature adoption\nSkills: product strategy, roadmapping, user research, SQL, Jira, Amplitude, Agile",
+    "jobDescription": "Backend Software Engineer\nRequirements: 3+ years of professional software development; Java or Python; REST APIs; relational databases; automated testing; Git.\nNice to have: cloud platforms.\nYou will design and build backend services for our SaaS product."
+  },
+  {
+    "id": "ml-to-mlops",
+    "description": "ML engineer without infrastructure experience applying for an MLOps role",
+    "expectedScore": { "min": 45, "max": 75 },
+    "mustDetectGaps": ["Kubernetes", "MLflow|model registry|ML platform"],
+    "resume": "Machine Learning Engineer, VisionAI (2019 - present)\n- Trained PyTorch object-detection models with 0.91 mAP for retail shelf analysis\n- Built data augmentation and evaluation pipelines in Python\n- Optimised inference with ONNX, cutting latency by 3x\n- Deployed models behind a Flask API on a single VM\nSkills: Python, PyTorch, TensorFlow, ONNX, NumPy, pandas, computer vision, Flask",
+    "jobDescription": "MLOps Engineer\nRequirements: Python; machine learning model deployment; Kubernetes; MLflow or a similar model registry; CI/CD for ML; Docker.\nNice to have: Kubeflow, feature stores.\nYou will build the platform our data scientists use to ship models."
+  },
+  {
+    "id": "security-strong",
+    "description": "Security operations engineer applying for a SOC analyst role",
+    "expectedScore": { "min": 75, "max": 100 },
+    "mustDetectGaps": [],
+    "resume": "Security Operations Engineer, ShieldBank (2018 - present)\n- Triaged alerts in Splunk and Microsoft Sentinel for a 24x7 SOC\n- Led incident response for phishing and malware events, writing post-incident reports\n- Tuned detection rules, reducing false positives by 35%\n- Automated enrichment of alerts with Python and SOAR playbooks\nSkills: SIEM (Splunk, Sentinel), incident response, threat hunting, MITRE ATT&CK, EDR, Python, network security\nCertifications: GCIH, Security+",
+    "jobDescription": "SOC Analyst\nRequirements: SIEM tools such as Splunk or Sentinel; incident response; alert triage; knowledge of MITRE ATT&CK; scripting for automation.\nNice to have: threat hunting, security certifications.\nYou will monitor, investigate and respond to security incidents."
+  },
+  {
+    "id": "ios-to-react-native",
+    "description": "Native iOS developer applying for a React Native role",
+    "expectedScore": { "min": 40, "max": 68 },
+    "mustDetectGaps": ["React Native", "JavaScript|TypeScript"],
+    "resume": "iOS Developer, FitTrack (2019 - present)\n- Built the iOS app in Swift and SwiftUI with 4.8 App Store rating\n- Integrated HealthKit and background sync\n- Set up Fastlane for automated TestFlight releases\n- Wrote XCTest unit and UI tests\nSkills: Swift, SwiftUI, UIKit, Combine, Core Data, Xcode, Fastlane",
+    "jobDescription": "Mobile Engineer (React Native)\nRequirements: React Native; JavaScript or TypeScript; publishing apps to the App Store and Google Play; mobile performance optimisation.\nNice to have: native iOS or Android experience.\nYou will build our cross-platform mobile app."
+  },
+  {
+    "id": "dotnet-to-java",
+    "description": "C#/.NET developer applying for a Java role",
+    "expectedScore": { "min": 42, "max": 70 },
+    "mustDetectGaps": ["Java"],
+    "resume": "Software Engineer, HealthSys (2017 - present)\n- Built ASP.NET Core Web APIs for appointment scheduling\n- Designed SQL Server schemas and Entity Framework migrations\n- Deployed services to Azure App Service with Azure DevOps pipelines\n- Wrote xUnit tests and introduced code review guidelines\nSkills: C#, .NET 8, ASP.NET Core, Entity Framework, SQL Server, Azure, REST, Docker",
+    "jobDescription": "Backend Engineer (Java)\nRequirements: 4+ years of backend development; Java and Spring Boot; relational databases; REST APIs; CI/CD; cloud deployment.\nNice to have: Azure, Docker.\nYou will build services for our healthcare platform."
+  },
+  {
+    "id": "sre-missing-go",
+    "description": "Site reliability engineer applying for an SRE role that also wants Go",
+    "expectedScore": { "min": 68, "max": 92 },
+    "mustDetectGaps": ["Go|Golang"],
+    "resume": "Site Reliability Engineer, PayLane (2018 - present)\n- Ran Kubernetes clusters on GCP serving 2 billion requests a month\n- Defined SLOs and error budgets for 25 services\n- Built Prometheus and Grafana dashboards and on-call runbooks\n- Automated toil with Python tooling and Terraform modules\n- Led blameless post-mortems for major incidents\nSkills: Kubernetes, GCP, Terraform, Prometheus, Grafana, Python, Linux, incident management",
+    "jobDescription": "Site Reliability Engineer\nRequirements: Kubernetes; a major cloud platform; infrastructure as code (Terraform); observability (Prometheus, Grafana); incident management; programming in Go.\nNice to have: service mesh, chaos engineering.\nYou will keep our payment platform reliable."
+  }
+]

@@ -1,0 +1,11 @@
+<interview_settings>
+Role: {{role}}
+Level: {{level}}
+Planned number of questions: {{questionTarget}}
+Question plan (question number: category):
+{{plan}}
+</interview_settings>
+
+{{resume}}
+
+{{jobDescription}}

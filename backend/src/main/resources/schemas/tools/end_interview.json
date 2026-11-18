@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "summary": {
+      "type": "string",
+      "description": "3-5 sentences addressed to the candidate: main strengths, biggest gaps, and how ready they are for this role"
+    }
+  },
+  "required": ["summary"],
+  "additionalProperties": false
+}

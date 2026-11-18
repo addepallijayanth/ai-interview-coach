@@ -1,0 +1,99 @@
+spring:
+  application:
+    name: ai-interview-coach
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/coach}
+    username: ${DB_USERNAME:coach}
+    password: ${DB_PASSWORD:coach}
+    hikari:
+      maximum-pool-size: ${DB_POOL_SIZE:10}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+  flyway:
+    enabled: true
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 3MB
+  threads:
+    virtual:
+      enabled: true
+  jackson:
+    default-property-inclusion: non_null
+
+server:
+  port: ${PORT:8080}
+  shutdown: graceful
+  forward-headers-strategy: framework
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+
+coach:
+  app:
+    # Public address of the web app. Links in confirmation and password-reset emails point here.
+    base-url: ${APP_BASE_URL:http://localhost:5173}
+  ai:
+    api-key: ${ANTHROPIC_API_KEY:}
+    base-url: ${ANTHROPIC_BASE_URL:https://api.anthropic.com}
+    timeout: 120s
+    max-retries: 2
+    fast-model: claude-haiku-5-5
+    smart-model: claude-sonnet-5-5
+    refusal-fallback: ${AI_REFUSAL_FALLBACK:true}
+    daily-spend-cap-usd: ${AI_DAILY_SPEND_CAP_USD:5.00}
+    max-document-chars: 30000
+    # USD per million tokens (first-party API list prices; cache-write = 5-minute TTL).
+    # Haiku 5.5 prices apply to prompts up to 100K tokens; this app's prompts stay far below that.
+    pricing:
+      claude-haiku-5-5: { input: 0.10, output: 0.50, cache-write: 0.125, cache-read: 0.01 }
+      claude-sonnet-5-5: { input: 2.00, output: 10.00, cache-write: 2.50, cache-read: 0.10 }
+  interview:
+    # Questions per level. Every interview mixes technical, problem-solving, system-design, project,
+    # behavioural, situational and HR questions (see InterviewLevel for the mix per level).
+    easy-questions: 10
+    standard-questions: 20
+    professional-questions: 30
+    max-agent-steps: 6
+    max-answer-chars: 4000
+    stream-timeout: 3m
+  security:
+    jwt-secret: ${JWT_SECRET:}
+    jwt-ttl: 24h
+    email-verification-ttl: 24h
+    password-reset-ttl: 1h
+    # Minimum gap between two emails of the same kind to one account (resend / forgot password).
+    email-resend-cooldown: 60s
+    cors-allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:5173,http://localhost:3000}
+  mail:
+    # SMTP server for confirmation and password-reset emails. Leave MAIL_HOST empty to skip sending: the links
+    # are then written to the log instead, which is handy for local development.
+    host: ${MAIL_HOST:}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USERNAME:}
+    password: ${MAIL_PASSWORD:}
+    starttls: ${MAIL_STARTTLS:true}
+    from: ${MAIL_FROM:AI Interview Coach <no-reply@example.com>}
+  rate-limit:
+    # A 30-question interview makes about 32 AI requests (start, one per answer, end).
+    ai-requests-per-day: ${AI_REQUESTS_PER_USER_PER_DAY:150}
+    auth-requests-per-minute: ${AUTH_REQUESTS_PER_MINUTE:10}

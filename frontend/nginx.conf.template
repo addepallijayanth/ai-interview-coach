@@ -1,0 +1,31 @@
+# Rendered by the nginx image at start-up: ${BACKEND_URL} comes from the environment.
+server {
+    listen 80;
+    server_name _;
+    root /usr/share/nginx/html;
+    index index.html;
+
+    # API calls, including the server-sent-events interview stream, go to the backend.
+    location /api/ {
+        proxy_pass ${BACKEND_URL};
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Connection "";
+        proxy_buffering off;      # forward streamed tokens immediately
+        proxy_cache off;
+        proxy_read_timeout 300s;  # an agent turn can think for a while between events
+        client_max_body_size 3m;
+    }
+
+    location /assets/ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+
+    # Client-side routes all serve the SPA.
+    location / {
+        try_files $uri /index.html;
+    }
+}

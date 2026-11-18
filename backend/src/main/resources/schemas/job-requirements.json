@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "properties": {
+    "title": { "type": "string" },
+    "company": { "type": "string", "description": "Hiring company, or empty if not stated" },
+    "seniority": {
+      "type": "string",
+      "enum": ["intern", "junior", "mid", "senior", "lead", "principal"]
+    },
+    "yearsRequired": { "type": "number", "description": "Minimum years of experience, 0 if not stated" },
+    "requiredSkills": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Must-have skills, most important first"
+    },
+    "niceToHaveSkills": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "responsibilities": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "3-6 short phrases"
+    }
+  },
+  "required": ["title", "company", "seniority", "yearsRequired", "requiredSkills", "niceToHaveSkills", "responsibilities"],
+  "additionalProperties": false
+}

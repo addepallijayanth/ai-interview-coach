@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "properties": {
+    "skills": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Canonical skill names, strongest evidence first, no duplicates"
+    },
+    "yearsExperience": {
+      "type": "number",
+      "description": "Total years of professional experience"
+    },
+    "roles": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Job titles held, most recent first"
+    },
+    "seniority": {
+      "type": "string",
+      "enum": ["intern", "junior", "mid", "senior", "lead", "principal"]
+    },
+    "education": {
+      "type": "string",
+      "description": "Highest qualification in a few words, or empty"
+    },
+    "highlights": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "3-5 concrete achievements"
+    }
+  },
+  "required": ["skills", "yearsExperience", "roles", "seniority", "education", "highlights"],
+  "additionalProperties": false
+}
