@@ -79,7 +79,7 @@ sequenceDiagram
     C-->>S: tool_use score_answer(score, strengths, weaknesses, model_answer)
     S-->>B: feedback
     S->>C: tool_result "saved · 19 of 20 remain · next is Project deep-dive · go harder"
-    C-->>S: question 2 (the planned category; harder after a high score, easier after a low one)
+    C-->>S: question 2 (the planned category, harder after a high score, easier after a low one)
     Note over S,C: … repeats until the last answer is scored …
     C-->>S: tool_use end_interview(summary)
     S-->>B: ended (overall score + summary)
